@@ -31,7 +31,7 @@ namespace PFWOTRCLUNLOCKER
             [HarmonyPriority(Priority.High)]
             public static bool Prefix(UnitProgressionData __instance, BlueprintCharacterClass characterClass, BlueprintArchetype archetype, ref bool __result)
             {
-               
+
                 if (Main.settings.unLockClassLevel)
                 {
                     if (characterClass.PrestigeClass)
@@ -199,7 +199,7 @@ namespace PFWOTRCLUNLOCKER
             {
                 if (Main.settings.unLockCharacterLevel)
                 {
-                    __result = 40;
+                    __result = 80;
                 }
             }
         }
